@@ -6,10 +6,6 @@
 	<packaging>war</packaging>
 	<version>0.0.6</version>
 	<name>MyApp Maven Webapp</name>
-	<plugin>
-  	<artifactId>maven-war-plugin</artifactId>
-  	<version>3.0.0</version>
-	</plugin>
 	<url>http://maven.apache.org</url>
 	<scm>
    <connection>scm:git:git://github.com/jenkinsci/stashnotifier-plugin.git</connection>
@@ -223,6 +219,10 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+  				<artifactId>maven-war-plugin</artifactId>
+  				<version>3.0.0</version>
 			</plugin>
 
 
