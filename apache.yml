@@ -4,4 +4,4 @@
   become_user: root
   tasks:
    - name: install apache
-     yum: name=apache2 update_cache=yes state=latest
+     apt: name=apache2 update_cache=yes state=latest
