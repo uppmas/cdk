@@ -6,6 +6,11 @@
           link: http://www.zmanda.com/downloads/community/ZRM-MySQL/1.1/Linux/MySQL-zrm-1.1-1.noarch.rpm
           destination: /usr/src/
   tasks:
+          - name: Ensure python-apt is installed
+            command: >
+            apt-get install python-apt -y -q
+            creates=/usr/share/doc/python-apt
+            
           - name:  download the mysql rpm from a remote repo
             get_url:
                     url: "{{link}}"
