@@ -1,0 +1,4 @@
+- name: testing
+  tasks:
+    - name: print the output
+      debug: msg="hello"
